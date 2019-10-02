@@ -9,3 +9,8 @@ django-heroku
 brew install postgresql
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/ macOS_SDK_headers_for_macOS_10.14.pkg -target /
 pip3 install django-heroku --user
+
+heroku run python manage.py migrate
+heroku run python manage.py makemigrations polls
+heroku run python manage.py sqlmigrate polls 0001
+heroku run python manage.py migrate
