@@ -6,5 +6,5 @@ black
 flake8
 # pytest
 coverage
-# coveralls
+coveralls
 # python-coveralls
