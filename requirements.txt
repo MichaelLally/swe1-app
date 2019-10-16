@@ -1,10 +1,11 @@
+# django
 django
 gunicorn
 django-heroku
 
+# travis CI
 black
 flake8
-# pytest
 coverage
 coveralls
 python-coveralls

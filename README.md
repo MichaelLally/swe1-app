@@ -1,4 +1,5 @@
 # swe1-app
+[![Build Status](https://travis-ci.com/MichaelLally/swe1-app.svg?branch=master)](https://travis-ci.com/MichaelLally/swe1-app)
 CS-GY 6063 Software Engineering Django App
 
 ### Requirements
