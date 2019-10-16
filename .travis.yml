@@ -9,3 +9,4 @@ install:
 
 script:
   - black --check
+  - flake8
