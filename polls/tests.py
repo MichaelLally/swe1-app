@@ -6,6 +6,7 @@ from django.urls import reverse
 
 from .models import Question
 
+
 def create_question(question_text, days):
     """
     Create a question with the given `question_text` and published the
@@ -25,6 +26,7 @@ class QuestionIndexViewTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "No polls are available.")
         self.assertQuerysetEqual(response.context['latest_question_list'], [])
+
 
     def test_past_question(self):
         """
@@ -106,7 +108,7 @@ class QuestionModelTests(TestCase):
         time = timezone.now() + datetime.timedelta(days=30)
         future_question = Question(pub_date=time)
         self.assertIs(future_question.was_published_recently(), False)
-    
+
     def test_was_published_recently_with_old_question(self):
         """
         was_published_recently() returns False for questions whose pub_date
